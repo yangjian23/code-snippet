@@ -1,4 +1,4 @@
-# @unicloud/code-snippet
+# Code Snippets for Unicloud
 
 ## Description
 
@@ -11,7 +11,7 @@ It's a code snippet plugin for VS Code
 
 
 ## Usage
-VS Code Extensions中安装插件 @unicloud/code-snippet
+VS Code Extensions中安装插件 Code Snippets for Unicloud
 
 插件的 snippets 是以 @ 开头的一串字符，例如:
 ```
@@ -64,5 +64,5 @@ VS Code Extensions中安装插件 @unicloud/code-snippet
 ```
 
 ## and More
-@unicloud/code-snippet 还在起步阶段，如果您有好的想法和需要补充的代码片段，欢迎留下 Issues ,我们将不断完善
+Code Snippets for Unicloud 还在起步阶段，如果您有好的想法和需要补充的代码片段，欢迎留下 Issues ,我们将不断完善
 

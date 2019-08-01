@@ -1,7 +1,7 @@
 {
     "name": "unicloud-code-snippet",
-    "displayName": "@unicloud/code-snippet",
-    "description": "it's a code snippet plugin for unicloud.com",
+    "displayName": "Code Snippets for Unicloud",
+    "description": "it's a code snippet plugin for Unicloud",
     "publisher": "yangjian",
     "version": "0.0.1",
     "engines": {
@@ -28,6 +28,11 @@
             {
                 "language": "javascript",
                 "path": "./snippets/snippets.js.json"
+            },
+
+            {
+                "language": "scss",
+                "path": "./snippets/snippets.scss.json"
             }
         ]
     }
