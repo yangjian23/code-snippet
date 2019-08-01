@@ -1,0 +1,154 @@
+{
+  "****************1***********************": "common",
+  "promise": {
+      "scope": "javascript",
+      "prefix": "@promise",
+      "body": [
+        "var p1 = new Promise((resolve, reject) => {",
+        "  // sync code",
+        "  if($1) {",
+        "    resolve()",
+        "  } else {",
+        "    reject()",
+        "  }",
+        "}).then(",
+        "  (val) => {",
+        "    // resolved callFunc",
+        "  },",
+        "  (val) => {",
+        "    // rejected callFunc",
+        "  }",
+        ").catch((err) => {",
+        "",
+        "})"
+      ],
+      "description": "javascript new Promise "
+    },
+
+    "setTimeout": {
+      "scope": "javascript",
+      "prefix": "@setTimeout",
+      "body": [
+        "var timer = setTimeout(() => {",
+        "  // callFunc",
+        "}, 100)",
+        "",
+        "clearTimeout(timer)"
+      ],
+      "description": "javascript setTimeout "
+    },
+
+    "setInterval": {
+      "scope": "javascript",
+      "prefix": "@setInterval",
+      "body": [
+        "var timer = setInterval(() => {",
+        "  // callFunc",
+        "}, 100)",
+        "",
+        "clearInterval(timer)"
+      ],
+      "description": "javascript setInterval "
+    },
+
+    "log": {
+      "scope": "javascript",
+      "prefix": "@log",
+      "body": [
+        "console.log($1)"
+      ],
+      "description": "javascript log"
+    },
+
+    
+  "****************2***********************": "advance",
+  "generate store": {
+    "scope": "javascript",
+    "prefix": "@generate-store",
+    "body": [
+      "import Vue from 'vue'",
+      "import Vuex from 'vuex'",
+      "",
+      "Vue.use(Vuex)",
+      "const store = new Vuex.Store({",
+      "  state: {",
+      "    count: 0",
+      "  },",
+      "  mutations: {",
+      "    increment(state) {",
+      "      state.count++",
+      "    }",
+      "  },",
+      "  actions: {",
+      "    increment(context) {",
+      "      context.commit('increment')",
+      "    }",
+      "  }",
+      "})",
+      "",
+      "export default store"
+    ],
+    "description": "javascript generate vuex"
+  },
+
+  "generate router": {
+    "scope": "javascript",
+    "prefix": "@generate-router",
+    "body": [
+      "import Vue from 'vue'",
+      "import Router from 'vue-router'",
+      "",
+      "const routes = [{",
+      "  path: '$1',",
+      "  name: '',",
+      "  component: () => import(''),",
+      "  // redirect: '',",
+      "  // meta: {},",
+      "  // children: [{",
+      "    // path: '',",
+      "    // name: '',",
+      "    // component: () => import('')",
+      "  // }]",
+      "}]",
+      "",
+      "Vue.use(Router)",
+      "",
+      "export default new Router({",
+      "  routes",
+      "})"
+
+    ],
+    "description": "javascript generate router"
+  },
+
+  "generate interceptors": {
+    "scope": "javascript",
+    "prefix": "@generate-interceptors",
+    "body": [
+      "import HTTP from '@pillarjs/http'",
+      "import { Message } from 'element-ui'",
+      "",
+      "const http = new HTTP({",
+      "  baseURL: '/'",
+      "  // timeout: 5000",
+      "})",
+      "",
+      "// http.useRequestInterceptor(request => {",
+      "  // ...",
+      "// })",
+      "",
+      "http.useResponseInterceptor(response => {",
+      "  if(",
+      "    response.status == 200 ||",
+      "    response.status == 201 ||",
+      "    response.status == 304",
+      "  ) {",
+      "    return response.data",
+      "  } else {",
+      "    Message.error('系统错误，请联系管理员')",
+      "  }",
+      "})"
+    ],
+    "description": "javascript generate interceptors"
+  }
+}

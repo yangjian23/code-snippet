@@ -1,0 +1,455 @@
+{
+  "*************************1**************************": "vue-html element-ui",
+  "el-container": {
+    "scope": "vue-html",
+    "prefix": "@el-container",
+    "body": [
+      "<el-container>",
+      "  <el-header>Header</el-header>",
+      "  <el-container>",
+      "    <el-aside width=\"200px\">Aside</el-aside>",
+      "    <el-main>Main</el-main>",
+      "  </el-container>",
+      "</el-container>"
+    ],
+    "description": "element-ui el-container"
+  },
+
+  "el-i": {
+    "scope": "vue-html",
+    "prefix": "@el-i",
+    "body": [
+      "<i class=\"el-icon-$1\"></i>"
+    ],
+    "description": "element-ui i"
+  },
+
+  "el-button": {
+		"scope": "vue-html",
+		"prefix": "@el-button",
+		"body": [
+			"<el-button type=\"\"></el-button>"
+		],
+		"description": "element-ui el-button"
+  },
+  
+  "el-radio-group": {
+    "scope": "vue-html",
+    "prefix": "@el-radio-group",
+    "body": [
+      "<el-radio-group v-model=\"$1\">",
+      "  <el-radio :label=\"$2\">备选项1</el-radio>",
+      "  <el-radio :label=\"\">备选项2</el-radio>",
+      "</el-radio-group>"
+    ],
+    "description": "element-ui el-radio-group"
+  },
+
+  "el-checkbox-group": {
+    "scope": "vue-html",
+    "prefix": "@el-checkbox-group",
+    "body": [
+      "<el-checkbox-group v-model=\"$1\">",
+      "  <el-checkbox :label=\"$2\">复选框A</el-checkbox>",
+      "  <el-checkbox :label=\"\">复选框B</el-checkbox>",
+      "</el-checkbox-group>"
+    ],
+    "description": "element-ui el-checkbox-group"
+  },
+
+  "el-input": {
+    "scope": "vue-html",
+    "prefix": "@el-input",
+    "body": [
+      "<el-input v-model=\"$1\" placeholder=\"请输入内容\"></el-input>"
+    ],
+    "description": "element-ui el-input"
+  },
+
+  "el-select": {
+    "scope": "vue-html",
+    "prefix": "@el-select",
+    "body": [
+      "<el-select v-model=\"\" placeholder=\"请选择\">",
+      "  <el-option",
+      "    v-for=\"item in options\"",
+      "    :key=\"item.value\"",
+      "    :label=\"item.label\"",
+      "    :value=\"item.value\">",
+      "  </el-option>",
+      "</el-select>"
+    ],
+    "description": "element-ui el-select"
+  },
+
+  "el-switch": {
+    "scope": "vue-html",
+    "prefix": "@el-switch",
+    "body": [
+      "<el-switch",
+      "  v-model=\"$1\"",
+      "  active-color=\"#13ce66\"",
+      "  inactive-color=\"#ff4949\">",
+      "  active-text=\"开\">",
+      "  inactive-text=\"关\">",
+      "</el-switch>"
+    ],
+    "description": "element-ui el-switch"
+  },
+
+  "el-upload": {
+    "scope": "vue-html",
+    "prefix": "@el-upload",
+    "body": [
+      "<el-upload",
+      "  class=\"upload-demo\"",
+      "  action=\"http://\"",
+      "  :file-list=\"fileList\"",
+      "  :before-upload=\"handleBeforeUpload\"",
+      "  :on-success=\"handleUploadSuccess\"",
+      "  :on-preview=\"handlePreview\"",
+      "  :before-remove=\"handleBeforeRemove\"",
+      "  :on-remove=\"handleRemove\">",
+      "  <el-button size=\"small\" type=\"primary\">点击上传<el-button>",
+      "  <div slot=\"tip\" class=\"el-upload__tip\">只能上传jpg/png文件，且不能超过500kb</div>",
+      "</el-upload>"
+    ],
+    "description": "element-ui el-upload"
+  },
+
+  "el-form": {
+    "scope": "vue-html",
+    "prefix": "@el-form",
+    "body": [
+      "<el-form ref=\"form\" :model=\"form\" label-width=\"80px\">",
+      "  <el-form-item label=\"表单项A\">",
+      "    <el-input v-model=\"form.A\"><el-input>",
+      "  </el-form-item>",
+      "  <el-form-item label=\"表单项B\">",
+      "    <el-select v-model=\"form.B\" placeholder=\"请选择\">",
+      "      <el-option label=\"B-1\" value=\"B-1\"></el-option>",
+      "      <el-option label=\"B-2\" value=\"B-2\"></el-option>",
+      "    </el-select>",
+      "  <el-form-item>",
+      "  <el-form-item>",
+      "    <el-button type=\"primary\">创建</el-button>",
+      "    <el-button>取消</el-button>",
+      "  </el-form-item>",
+      "</el-form>"
+    ],
+    "description": "element-ui el-form"
+  },
+
+  "el-table": {
+    "scope": "vue-html",
+    "prefix": "@el-table",
+    "body": [
+      "<el-table",
+      "  :data=\"tableData\"",
+      "  style=\"width: 100%\">",
+      "  <el-table-column",
+      "    prop=\"propA\"",
+      "    label=\"labelA\"",
+      "    width=\"180\">",
+      "  </el-table-column>",
+      "  <el-table-column",
+      "    prop=\"propB\"",
+      "    label=\"labelB\">",
+      "  </el-table-column>",
+      "</el-table>"
+    ],
+    "description": "element-ui el-table"
+  },
+
+  "el-progress": {
+    "scope": "vue-html",
+    "prefix": "@el-progress",
+    "body": [
+      "<el-progress :percentage=\"$1\" :format=\"$2\" status=\"success\"</el-progress>"
+    ],
+    "description": "element-ui el-progress"
+  },
+
+  "el-tree": {
+    "scope": "vue-html",
+    "prefix": "@el-tree",
+    "body": [
+      "<el-tree :data=\"$1\" :props=\"$2\" @node-click=\"handleNodeClick\"><el-tree>"
+    ],
+    "description": "element-ui el-tree"
+  },
+
+  "el-pagination": {
+    "scope": "vue-html",
+    "prefix": "@el-pagination",
+    "body": [
+      "<el-pagination",
+      "  @size-change=\"handelSizeChange\"",
+      "  @current-change=\"handelCurrentChange\"",
+      "  :current-page=\"$1\"",
+      "  :page-sizes=\"[100, 200, 300, 400]\"",
+      "  :page-size=\"100\"",
+      "  layout=\"total, sizes, prev, pager, next, jumper\"",
+      "  :total=\"400\">",
+      "</el-pagination>"
+    ],
+    "description": "element-ui el-pagination"
+  },
+
+  "el-menu": {
+    "scope": "vue-html",
+    "prefix": "@el-menu",
+    "body": [
+      "<el-menu :default-active=\"$1\" mode=\"horizontal\" @select=\"handleSelect\">",
+      "  <el-menu-item index=\"1\">Menu1<el-menu-item>",
+      "  <el-submenu index=\"2\">",
+      "    <template slot=\"title\">Menu2</template>",
+      "    <el-menu-item index=\"2-1\">选项1</el-menu-item>",
+      "    <el-menu-item index=\"2-2\">选项2</el-menu-item>",
+      "    <el-submenu index=\"2-3\">",
+      "      <template slot=\"title\">选项3</template>",
+      "      <el-menu-item index=\"2-3-1\">选项3-1</el-menu-item>",
+      "      <el-menu-item index=\"2-3-2\">选项3-2</el-menu-item>",
+      "    </el-submenu>",
+      "  </el-submenu>",
+      "  <el-menu-item index=\"3\" disabled>Menu3</el-menu-item>",
+      "  <el-menu-item index=\"4\"><a href=\"https://www.unicloud.com\" target=\"_blank\">Menu4</a></el-menu-item>",
+      "</el-menu>"
+    ],
+    "description": "element-ui el-menu"
+  },
+
+  "el-tabs": {
+    "scope": "vue-html",
+    "prefix": "@el-tabs",
+    "body": [
+      "<el-tabs v-model=\"$1\" @tab-click=\"handleClick\">",
+      "  <el-tab-pane label=\"tab-A\" name=\"first\">tab-A</el-tab-pane>",
+      "  <el-tab-pane label=\"tab-B\" name=\"second\">tab-B</el-tab-pane>",
+      "  <el-tab-pane label=\"tab-C\" name=\"third\">tab-C</el-tab-pane>",
+      "</el-tabs>"
+    ],
+    "description": "element-ui el-tabs"
+  },
+
+  "el-breadcrumb": {
+    "scope": "vue-html",
+    "prefix": "@el-breadcrumb",
+    "body": [
+      "<el-breadcrumb separator-class=\"el-icon-arrow-right\">",
+      "  <el-breadcrumb-item :to=\"{ path: '/' }\">首页</el-breadcrumb-item>",
+      "  <el-breadcrumb-item>活动管理</el-breadcrumb-item>",
+      "  <el-breadcrumb-item>活动列表</el-breadcrumb-item>",
+      "  <el-breadcrumb-item>活动详情</el-breadcrumb-item>",
+      "</el-breadcrumb>"
+    ],
+    "description": "element-ui el-breadcrumb"
+  },
+
+  "el-dropdown": {
+    "scope": "vue-html",
+    "prefix": "@el-dropdowm",
+    "body": [
+      "<el-dropdown>",
+      "  <el-button type=\"primary\">",
+      "    更多菜单",
+      "    <i class=\"el-icon-arrow-down el-icon--right\"></i>",
+      "  </el-button>",
+      "  <el-dropdown-menu slot=\"dropdown\">",
+      "    <el-dropdown-item>menu-1</el-dropdown-item>",
+      "    <el-dropdown-item>menu-2</el-dropdown-item>",
+      "    <el-dropdown-item>menu-3</el-dropdown-item>",
+      "  </el-dropdown-menu>",
+      "</el-dropdown>"
+    ],
+    "description": "element-ui el-dropdown"
+  },
+
+  "el-dialog": {
+    "scope": "vue-html",
+    "prefix": "@el-dialog",
+    "body": [
+      "<el-dialog",
+      "  title=\"提示\"",
+      "  :visible.sync=\"dialogVisible\"",
+      "  width=\"30%\"",
+      "  :before-close=\"handleClose\">",
+      "  <span slot=\"footer\" class=\"dialog-footer\">",
+      "    <el-button @click=\"dialogVisible=false\">取消</el-button>",
+      "    <el-button type=\"primary\" @click=\"dialogVisible=false\">确定</el-button>",
+      "  </span>",
+      "</el-dialog>"
+    ],
+    "description": "element-ui el-dialog"
+  },
+
+  "el-tooltip": {
+    "scope": "vue-html",
+    "prefix": "@el-tooltip",
+    "body": [
+      "<el-tooltip class=\"$1\" effect=\"dark\" content=\"提示文字\" placement=\"top\">",
+      "  <!-- target node -->",
+      "</el-tooltip>"
+    ],
+    "description": "element-ui el-tooltip"
+  },
+
+  "el-popover": {
+    "scope": "vue-html",
+    "prefix": "@el-popover",
+    "body": [
+      "<el-popover",
+      "  placement=\"top-start\"",
+      "  title=\"标题\"",
+      "  width=\"200\"",
+      "  trigger=\"hover\"",
+      "  content=\"这是一段内容\">",
+      "  <el-button slot=\"reference\">hover 激活</el-button>",
+      "</el-popover>"
+    ],
+    "description": "element-ui el-popover"
+  },
+
+  "el-card": {
+    "scope": "vue-html",
+    "prefix": "@el-card",
+    "body": [
+      "<el-card style=\"width：480px\">",
+      "  <div slot=\"header\" class=\"clearfix\">",
+      "    <span>卡片名称</span>",
+      "    <el-button style=\"float: right; padding: 3px 0\" type=\"text\">操作按钮</el-button>",
+      "  </div>",
+      "  <div v-for=\"o in 4\" :key=\"o\">",
+      "    {{'列表内容' + o}}",
+      "  </div>",
+      "</el-card>"
+    ],
+    "description": "element-ui el-card"
+  },
+
+  "el-carousel": {
+    "scope": "vue-html",
+    "prefix": "@el-carousel",
+    "body": [
+      "<el-carousel height=\"150px\">",
+      "  <el-carousel-item v-for=\"item in 4\" :key=\"item\">",
+      "    <h3>{{ item }}</h3>",
+      "  </el-carousel-item>",
+      "</el-carousel>"
+    ],
+    "description": "element-ui "
+  },
+
+  "el-collapse": {
+    "scope": "vue-html",
+    "prefix": "@el-collapse",
+    "body": [
+      "<el-collapse v-model=\"$1\" @change=\"handleChange\">",
+      "  <el-collapse-item title=\"title-1\" name=\"1\">",
+      "    <div>this is content-1</div>",
+      "  </el-collapse-item>",
+      "  <el-collapse-item title=\"title-2\" name=\"1\">",
+      "    <div>this is content-2</div>",
+      "  </el-collapse-item>",
+      "</el-collapse>"
+    ],
+    "description": "element-ui el-collapse"
+  },
+
+  "***************************2*******************************": "vue",
+  "template": {
+      "scope": "vue",
+      "prefix": "@template",
+      "body": [
+          "<template>",
+          "  <div>\n",
+          "  </div>",
+          "</template>\n",
+          
+          "<script>",
+          "  export default {",
+          "    data() {",
+          "      retun {}",
+          "    }",
+          "    methods: {},",
+          "  }",
+          "</script>\n",
+
+          "<style lang='scss' scoped>\n",
+          "</style>"
+      ],
+      "description": "vue template"
+  },
+
+  "message": {
+    "scope": "vue",
+    "prefix": "@message",
+    "body": [
+      "this.\\$message({",
+      "  message: '',",
+      "  type: ''",
+      "})"
+    ],
+    "description": "element-ui message"
+  },
+
+  "messageBox-alert": {
+    "scope": "vue",
+    "prefix": "@messageBox-alert",
+    "body": [
+      "this.\\$alert('这是一段内容', '标题名称', {",
+      "  confirmButtonText: '确定',",
+      "  callback: action => {$1}",
+      "})"
+    ],
+    "description": "element-ui messageBox-alert"
+  },
+
+  "messageBox-confirm": {
+    "scope": "vue",
+    "prefix": "@messageBox-confirm",
+    "body": [
+      "this.\\$confirm('这是一段内容','标题名称', {",
+      "  confirmButtonText: '确定',",
+      "  cancelButtonText: '取消',",
+      "  type: ''",
+      "}).then(() => {",
+      "  //...",
+      "}).catch(() => {",
+      "  //...",
+      "})"
+    ],
+    "description": "element-ui messageBox-confirm"
+  },
+
+  "messageBox-prompt": {
+    "scope": "vue",
+    "prefix": "@messageBox-prompt",
+    "body": [
+      "this.\\$prompt('请输入', '提示', {",
+      "  confirmButtonText: '确定',",
+      "  cancelButtonText: '取消',",
+      "  inputPattern: '$1',",
+      "  inputErrorMessage: '输入格式不正确！'",
+      "}).then(() => {",
+      "  //...",
+      "}).catch(() => {",
+      "  //...",
+      "})"
+    ],
+    "description": "element-ui messageBox-prompt"
+  },
+
+  "notification": {
+    "scope": "vue",
+    "prefix": "@notification",
+    "body": [
+      "const h = this.\\$createElement\n",
+      "this.\\$notify({",
+      "  title: '标题名称',",
+      "  message: h('i', { style: 'color: teal' }, '这是一段提示内容...')",
+      "})"
+    ],
+    "description": "element-ui notification"
+  }
+}

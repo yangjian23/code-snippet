@@ -1,0 +1,34 @@
+{
+    "name": "unicloud-code-snippet",
+    "displayName": "@unicloud/code-snippet",
+    "description": "it's a code snippet plugin for unicloud.com",
+    "publisher": "yangjian",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.vue.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/snippets.vue.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/snippets.vue.json"
+            },
+            
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.js.json"
+            }
+        ]
+    }
+}
