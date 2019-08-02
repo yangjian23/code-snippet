@@ -3,8 +3,8 @@
     "displayName": "Code Snippets for Unicloud",
     "description": "it's a code snippet plugin for Unicloud",
     "publisher": "unicloud-fed",
-    "version": "1.0.1",
-    "icon": "images/logo_unis.png",
+    "version": "1.0.2",
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.36.0"
     },
