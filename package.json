@@ -2,8 +2,9 @@
     "name": "unicloud-code-snippet",
     "displayName": "Code Snippets for Unicloud",
     "description": "it's a code snippet plugin for Unicloud",
-    "publisher": "yangjian",
-    "version": "0.0.1",
+    "publisher": "unicloud-fed",
+    "version": "1.0.1",
+    "icon": "images/logo_unis.png",
     "engines": {
         "vscode": "^1.36.0"
     },
@@ -35,5 +36,9 @@
                 "path": "./snippets/snippets.scss.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@10.0.53.138:frontend-labs/vscode-snippets.git"
     }
 }
