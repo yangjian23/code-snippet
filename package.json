@@ -3,13 +3,13 @@
     "displayName": "Code Snippets for Unicloud",
     "description": "it's a code snippet plugin for Unicloud",
     "publisher": "unicloud-fed",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.36.0"
     },
     "script": {
-      "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
     },
     "categories": [
         "Snippets"
