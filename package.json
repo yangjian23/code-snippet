@@ -3,7 +3,7 @@
     "displayName": "Code Snippets for Unicloud",
     "description": "it's a code snippet plugin for Unicloud",
     "publisher": "unicloud-fed",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.36.0"
@@ -25,12 +25,10 @@
                 "language": "vue-html",
                 "path": "./snippets/snippets.vue.json"
             },
-            
             {
                 "language": "javascript",
                 "path": "./snippets/snippets.js.json"
             },
-
             {
                 "language": "scss",
                 "path": "./snippets/snippets.scss.json"
