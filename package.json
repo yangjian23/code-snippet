@@ -8,6 +8,9 @@
     "engines": {
         "vscode": "^1.36.0"
     },
+    "script": {
+      "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    },
     "categories": [
         "Snippets"
     ],
@@ -38,5 +41,8 @@
     "repository": {
         "type": "git",
         "url": "git@10.0.53.138:frontend-labs/vscode-snippets.git"
+    },
+    "devDependencies": {
+        "conventional-changelog-cli": "^2.0.23"
     }
 }
