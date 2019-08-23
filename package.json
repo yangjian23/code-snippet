@@ -8,7 +8,7 @@
     "engines": {
         "vscode": "^1.36.0"
     },
-    "script": {
+    "scripts": {
         "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
     },
     "categories": [
