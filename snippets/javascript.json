@@ -1,0 +1,121 @@
+{
+  "promise": {
+    "scope": "javascript",
+    "prefix": "upromise",
+    "body": [
+      "var p1 = new Promise((resolve, reject) => {",
+      "  // sync code",
+      "  if($1) {",
+      "    resolve()",
+      "  } else {",
+      "    reject()",
+      "  }",
+      "}).then(",
+      "  (val) => {",
+      "    // resolved callFunc",
+      "  },",
+      "  (val) => {",
+      "    // rejected callFunc",
+      "  }",
+      ").catch((err) => {",
+      "",
+      "})"
+    ],
+    "description": "javascript new Promise "
+  },
+
+  "setTimeout": {
+    "scope": "javascript",
+    "prefix": "usetTimeout",
+    "body": [
+      "var timer = setTimeout(() => {",
+      "  // callFunc",
+      "}, 100)",
+      "",
+      "clearTimeout(timer)"
+    ],
+    "description": "javascript setTimeout "
+  },
+
+  "setInterval": {
+    "scope": "javascript",
+    "prefix": "usetInterval",
+    "body": [
+      "var timer = setInterval(() => {",
+      "  // callFunc",
+      "}, 100)",
+      "",
+      "clearInterval(timer)"
+    ],
+    "description": "javascript setInterval "
+  },
+
+  "log": {
+    "scope": "javascript",
+    "prefix": "ulog",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "javascript log"
+  },
+
+  "warn": {
+    "scope": "javascript",
+    "prefix": "uwarn",
+    "body": [
+      "console.warn($1)"
+    ],
+    "description": "javascript warn"
+  },
+
+  "switch-case": {
+    "scope": "javascript",
+    "prefix": "uswitch-case",
+    "body": [
+      "switch() {",
+      "  case 0:",
+      "    // ...",
+      "    break;",
+      "  default:",
+      "    // ...",
+      "    break;",
+      "}"
+    ],
+    "description": "javascript switch-case"
+  },
+
+  "try-catch": {
+    "scope": "javascript",
+    "prefix": "utry-catch",
+    "body": [
+      "try {",
+      "",
+      "} catch(error) {",
+      "",
+      "}"
+    ],
+    "description": "javascript try-catch"
+  },
+
+  "for-in": {
+    "scope": "javascript",
+    "prefix": "ufor-in",
+    "body": [
+      "for (const key in object) {",
+      "",
+      "}"
+    ],
+    "description": "javascript for-in"
+  },
+
+  "for-of": {
+    "scope": "javascript",
+    "prefix": "ufor-of",
+    "body": [
+      "for (const item of array) {",
+      "",
+      "}"
+    ],
+    "description": "javascript for-in"
+  }
+}

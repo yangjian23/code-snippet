@@ -1,0 +1,333 @@
+{
+  "template": {
+    "scope": "vue",
+    "prefix": "utemplate",
+    "body": [
+        "<template>",
+        "  <div>\n",
+        "  </div>",
+        "</template>\n",
+        
+        "<script>",
+        "  export default {",
+        "    data() {",
+        "      return {}",
+        "    }",
+        "    methods: {}",
+        "  }",
+        "</script>\n",
+
+        "<style lang='scss' scoped>\n",
+        "</style>"
+    ],
+    "description": "vue template"
+  },
+
+  "data": {
+    "scope": "vue",
+    "prefix": "udata",
+    "body": [
+      "data() {",
+      "  return {",
+      "",
+      "  }",
+      "}"
+    ],
+    "description": "vue data"
+  },
+
+  "computed": {
+    "scope": "vue",
+    "prefix": "ucomputed",
+    "body": [
+      "computed: {",
+      "  computedData() {",
+      "    return ",
+      "  }",
+      "}"
+    ],
+    "description": "vue computed"
+  },
+
+  "props-simple": {
+    "scope": "vue",
+    "prefix": "uprops-simple",
+    "body": [
+      "props: ['']"
+    ],
+    "description": "vue  props"
+  },
+
+  "props-advanced": {
+    "scope": "vue",
+    "prefix": "uprops-advanced",
+    "body": [
+      "props: {",
+      "  age: {",
+      "    type: Number,",
+      "    default: 0,",
+      "    required: true,",
+      "    validator: value => {",
+      "      return value >= 0",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": " "
+  },
+
+  "methods": {
+    "scope": "vue",
+    "prefix": "umethods",
+    "body": [
+      "methods: {",
+      "  dostuff() {",
+      "",
+      "  }",
+      "}"
+    ],
+    "description": " "
+  },
+
+  "components": {
+    "scope": "vue",
+    "prefix": "ucomponents",
+    "body": [
+      "components: {",
+      "  'component-a': ComponentA,",
+      "  // or",
+      "  ComponentB",
+      "}"
+    ],
+    "description": "vue components"
+  },
+
+  "watch": {
+    "scope": "vue",
+    "prefix": "uwatch",
+    "body": [
+      "watch: {",
+      "  a(val, oldVal) {",
+      "    console.log(val, oldval)",
+      "  }",
+      "}"
+    ],
+    "description": "vue watch"
+  },
+
+  "watch-deep": {
+    "scope": "vue",
+    "prefix": "uwatch-deep",
+    "body": [
+      "wacth: {",
+      "  b: {",
+      "    handler(val, oldVal) {",
+      "      console.log(val, oldVal)",
+      "    },",
+      "    deep: true",
+      "  }",
+      "}"
+    ],
+    "description": "vue watch-deep"
+  },
+
+  "render": {
+    "scope": "vue",
+    "prefix": "urender",
+    "body": [
+      "render(createElement) {",
+      "  return createElement(",
+      "    'div', // 标签名称",
+      "    {} // 标签属性",
+      "    // 子元素数组",
+      "  )",
+      "}"
+    ],
+    "description": "vue render"
+  },
+
+  "filters": {
+    "scope": "vue",
+    "prefix": "ufilters",
+    "body": [
+      "filters: {",
+      "  filterA(value) {",
+      "    return value",
+      "  }",
+      "}"
+    ],
+    "description": "vue filters"
+  },
+
+  "bind-class-object": {
+    "scope": "vue",
+    "prefix": "ubind-class-object",
+    "body": [
+      ":class=\"{ active: true }\""
+    ],
+    "description": "vue bind-class-object "
+  },
+
+  "bind-class-array": {
+    "scope": "vue",
+    "prefix": "ubind-class-array",
+    "body": [
+      ":class=\"[ activeClass ]\""
+    ],
+    "description": "vue bind-class-object "
+  },
+
+  "bind-style-object": {
+    "scope": "vue",
+    "prefix": "ubind-style-object",
+    "body": [
+      ":style=\"{ backgroundColor: 'red', fontSize: fontSize + 'px' }\""
+    ],
+    "description": "vue bind-style-object"
+  },
+
+  "bind-style-array": {
+    "scope": "vue",
+    "prefix": "ubind-style-array",
+    "body": [
+      ":style=\"[ baseStyles, overridingStyles ]\""
+    ],
+    "description": "vue bind-style-object"
+  },
+
+  "lifehooks": {
+    "scope": "vue",
+    "prefix": "ulifehooks",
+    "body": [
+      "beforeCreate",
+      "created",
+      "beforeMount",
+      "mounted",
+      "beforeUpdate",
+      "updated",
+      "activated",
+      "deactivated",
+      "beforeDestroy",
+      "destroyed",
+      "errorCaptured"
+    ],
+    "description": "vue lifehooks"
+  },
+
+  "directive": {
+    "scope": "vue",
+    "prefix": "udirective",
+    "body": [
+      "// 钩子函数参数: el、binding、vnode、oldVnode",
+      "Vue.directive('demo', {",
+      "  bind() {},",
+      "  inserted() {},",
+      "  update() {},",
+      "  componentUpdated() {},",
+      "  unbind() {}",
+      "}"
+    ],
+    "description": "vue directive"
+  },
+
+  "router-beforeEach": {
+    "scope": "vue",
+    "prefix": "urouter-beforeEach",
+    "body": [
+      "router.beforeEach((to, from, next) => {",
+      " // ...",
+      "})"
+    ],
+    "description": " "
+  },
+  
+  "generate store": {
+    "scope": "javascript",
+    "prefix": "ugenerate-store",
+    "body": [
+      "import Vue from 'vue'",
+      "import Vuex from 'vuex'",
+      "",
+      "Vue.use(Vuex)",
+      "const store = new Vuex.Store({",
+      "  state: {",
+      "    count: 0",
+      "  },",
+      "  mutations: {",
+      "    COUNTPLUS(state) {",
+      "      state.count++",
+      "    }",
+      "  },",
+      "  actions: {",
+      "    increment(context) {",
+      "      context.commit('COUNTPLUS')",
+      "    }",
+      "  }",
+      "})",
+      "",
+      "export default store"
+    ],
+    "description": "javascript generate vuex"
+  },
+
+  "generate router": {
+    "scope": "javascript",
+    "prefix": "ugenerate-router",
+    "body": [
+      "import Vue from 'vue'",
+      "import Router from 'vue-router'",
+      "",
+      "const routes = [{",
+      "  path: '$1',",
+      "  name: '',",
+      "  component: () => import(''),",
+      "  // redirect: '',",
+      "  // meta: {},",
+      "  // children: [{",
+      "    // path: '',",
+      "    // name: '',",
+      "    // component: () => import('')",
+      "  // }]",
+      "}]",
+      "",
+      "Vue.use(Router)",
+      "",
+      "export default new Router({",
+      "  routes",
+      "})"
+
+    ],
+    "description": "javascript generate router"
+  },
+
+  "generate interceptors": {
+    "scope": "javascript",
+    "prefix": "ugenerate-interceptors",
+    "body": [
+      "import HTTP from '@pillarjs/http'",
+      "import { Message } from 'element-ui'",
+      "",
+      "const http = new HTTP({",
+      "  baseURL: '/'",
+      "  // timeout: 5000",
+      "})",
+      "",
+      "// http.useRequestInterceptor(request => {",
+      "  // ...",
+      "// })",
+      "",
+      "http.useResponseInterceptor(response => {",
+      "  if(",
+      "    response.status == 200 ||",
+      "    response.status == 201 ||",
+      "    response.status == 304",
+      "  ) {",
+      "    return response.data",
+      "  } else {",
+      "    Message.error('系统错误，请联系管理员')",
+      "  }",
+      "})"
+    ],
+    "description": "javascript generate interceptors"
+  }
+}

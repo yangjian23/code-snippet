@@ -1,8 +1,7 @@
 {
-  "*************************1**************************": "vue-html element-ui",
   "el-container": {
     "scope": "vue-html",
-    "prefix": "@el-container",
+    "prefix": "uel-container",
     "body": [
       "<el-container>",
       "  <el-header>Header</el-header>",
@@ -17,7 +16,7 @@
 
   "el-i": {
     "scope": "vue-html",
-    "prefix": "@el-i",
+    "prefix": "uel-i",
     "body": [
       "<i class=\"el-icon-$1\"></i>"
     ],
@@ -26,7 +25,7 @@
 
   "el-button": {
 		"scope": "vue-html",
-		"prefix": "@el-button",
+		"prefix": "uel-button",
 		"body": [
 			"<el-button type=\"\"></el-button>"
 		],
@@ -35,7 +34,7 @@
   
   "el-radio-group": {
     "scope": "vue-html",
-    "prefix": "@el-radio-group",
+    "prefix": "uel-radio-group",
     "body": [
       "<el-radio-group v-model=\"$1\">",
       "  <el-radio :label=\"$2\">备选项1</el-radio>",
@@ -47,7 +46,7 @@
 
   "el-checkbox-group": {
     "scope": "vue-html",
-    "prefix": "@el-checkbox-group",
+    "prefix": "uel-checkbox-group",
     "body": [
       "<el-checkbox-group v-model=\"$1\">",
       "  <el-checkbox :label=\"$2\">复选框A</el-checkbox>",
@@ -59,7 +58,7 @@
 
   "el-input": {
     "scope": "vue-html",
-    "prefix": "@el-input",
+    "prefix": "uel-input",
     "body": [
       "<el-input v-model=\"$1\" placeholder=\"请输入内容\"></el-input>"
     ],
@@ -68,7 +67,7 @@
 
   "el-select": {
     "scope": "vue-html",
-    "prefix": "@el-select",
+    "prefix": "uel-select",
     "body": [
       "<el-select v-model=\"\" placeholder=\"请选择\">",
       "  <el-option",
@@ -84,7 +83,7 @@
 
   "el-switch": {
     "scope": "vue-html",
-    "prefix": "@el-switch",
+    "prefix": "uel-switch",
     "body": [
       "<el-switch",
       "  v-model=\"$1\"",
@@ -99,7 +98,7 @@
 
   "el-upload": {
     "scope": "vue-html",
-    "prefix": "@el-upload",
+    "prefix": "uel-upload",
     "body": [
       "<el-upload",
       "  class=\"upload-demo\"",
@@ -119,7 +118,7 @@
 
   "el-form": {
     "scope": "vue-html",
-    "prefix": "@el-form",
+    "prefix": "uel-form",
     "body": [
       "<el-form ref=\"form\" :model=\"form\" label-width=\"80px\">",
       "  <el-form-item label=\"表单项A\">",
@@ -142,7 +141,7 @@
 
   "el-table": {
     "scope": "vue-html",
-    "prefix": "@el-table",
+    "prefix": "uel-table",
     "body": [
       "<el-table",
       "  :data=\"tableData\"",
@@ -163,7 +162,7 @@
 
   "el-progress": {
     "scope": "vue-html",
-    "prefix": "@el-progress",
+    "prefix": "uel-progress",
     "body": [
       "<el-progress :percentage=\"$1\" :format=\"$2\" status=\"success\"</el-progress>"
     ],
@@ -172,7 +171,7 @@
 
   "el-tree": {
     "scope": "vue-html",
-    "prefix": "@el-tree",
+    "prefix": "uel-tree",
     "body": [
       "<el-tree :data=\"$1\" :props=\"$2\" @node-click=\"handleNodeClick\"><el-tree>"
     ],
@@ -181,12 +180,12 @@
 
   "el-pagination": {
     "scope": "vue-html",
-    "prefix": "@el-pagination",
+    "prefix": "uel-pagination",
     "body": [
       "<el-pagination",
       "  @size-change=\"handelSizeChange\"",
       "  @current-change=\"handelCurrentChange\"",
-      "  :current-page=\"$1\"",
+      "  :current-page.sync=\"$1\"",
       "  :page-sizes=\"[100, 200, 300, 400]\"",
       "  :page-size=\"100\"",
       "  layout=\"total, sizes, prev, pager, next, jumper\"",
@@ -198,7 +197,7 @@
 
   "el-menu": {
     "scope": "vue-html",
-    "prefix": "@el-menu",
+    "prefix": "uel-menu",
     "body": [
       "<el-menu :default-active=\"$1\" mode=\"horizontal\" @select=\"handleSelect\">",
       "  <el-menu-item index=\"1\">Menu1<el-menu-item>",
@@ -221,7 +220,7 @@
 
   "el-tabs": {
     "scope": "vue-html",
-    "prefix": "@el-tabs",
+    "prefix": "uel-tabs",
     "body": [
       "<el-tabs v-model=\"$1\" @tab-click=\"handleClick\">",
       "  <el-tab-pane label=\"tab-A\" name=\"first\">tab-A</el-tab-pane>",
@@ -234,7 +233,7 @@
 
   "el-breadcrumb": {
     "scope": "vue-html",
-    "prefix": "@el-breadcrumb",
+    "prefix": "uel-breadcrumb",
     "body": [
       "<el-breadcrumb separator-class=\"el-icon-arrow-right\">",
       "  <el-breadcrumb-item :to=\"{ path: '/' }\">首页</el-breadcrumb-item>",
@@ -248,7 +247,7 @@
 
   "el-dropdown": {
     "scope": "vue-html",
-    "prefix": "@el-dropdowm",
+    "prefix": "uel-dropdown",
     "body": [
       "<el-dropdown>",
       "  <el-button type=\"primary\">",
@@ -267,7 +266,7 @@
 
   "el-dialog": {
     "scope": "vue-html",
-    "prefix": "@el-dialog",
+    "prefix": "uel-dialog",
     "body": [
       "<el-dialog",
       "  title=\"提示\"",
@@ -285,7 +284,7 @@
 
   "el-tooltip": {
     "scope": "vue-html",
-    "prefix": "@el-tooltip",
+    "prefix": "uel-tooltip",
     "body": [
       "<el-tooltip class=\"$1\" effect=\"dark\" content=\"提示文字\" placement=\"top\">",
       "  <!-- target node -->",
@@ -296,7 +295,7 @@
 
   "el-popover": {
     "scope": "vue-html",
-    "prefix": "@el-popover",
+    "prefix": "uel-popover",
     "body": [
       "<el-popover",
       "  placement=\"top-start\"",
@@ -312,7 +311,7 @@
 
   "el-card": {
     "scope": "vue-html",
-    "prefix": "@el-card",
+    "prefix": "uel-card",
     "body": [
       "<el-card style=\"width：480px\">",
       "  <div slot=\"header\" class=\"clearfix\">",
@@ -329,7 +328,7 @@
 
   "el-carousel": {
     "scope": "vue-html",
-    "prefix": "@el-carousel",
+    "prefix": "uel-carousel",
     "body": [
       "<el-carousel height=\"150px\">",
       "  <el-carousel-item v-for=\"item in 4\" :key=\"item\">",
@@ -342,7 +341,7 @@
 
   "el-collapse": {
     "scope": "vue-html",
-    "prefix": "@el-collapse",
+    "prefix": "uel-collapse",
     "body": [
       "<el-collapse v-model=\"$1\" @change=\"handleChange\">",
       "  <el-collapse-item title=\"title-1\" name=\"1\">",
@@ -356,34 +355,9 @@
     "description": "element-ui el-collapse"
   },
 
-  "***************************2*******************************": "vue",
-  "template": {
-      "scope": "vue",
-      "prefix": "@template",
-      "body": [
-          "<template>",
-          "  <div>\n",
-          "  </div>",
-          "</template>\n",
-          
-          "<script>",
-          "  export default {",
-          "    data() {",
-          "      return {}",
-          "    }",
-          "    methods: {},",
-          "  }",
-          "</script>\n",
-
-          "<style lang='scss' scoped>\n",
-          "</style>"
-      ],
-      "description": "vue template"
-  },
-
   "message": {
     "scope": "vue",
-    "prefix": "@message",
+    "prefix": "umessage",
     "body": [
       "this.\\$message({",
       "  message: '',",
@@ -395,7 +369,7 @@
 
   "messageBox-alert": {
     "scope": "vue",
-    "prefix": "@messageBox-alert",
+    "prefix": "umessageBox-alert",
     "body": [
       "this.\\$alert('这是一段内容', '标题名称', {",
       "  confirmButtonText: '确定',",
@@ -407,7 +381,7 @@
 
   "messageBox-confirm": {
     "scope": "vue",
-    "prefix": "@messageBox-confirm",
+    "prefix": "umessageBox-confirm",
     "body": [
       "this.\\$confirm('这是一段内容','标题名称', {",
       "  confirmButtonText: '确定',",
@@ -424,7 +398,7 @@
 
   "messageBox-prompt": {
     "scope": "vue",
-    "prefix": "@messageBox-prompt",
+    "prefix": "umessageBox-prompt",
     "body": [
       "this.\\$prompt('请输入', '提示', {",
       "  confirmButtonText: '确定',",
@@ -442,7 +416,7 @@
 
   "notification": {
     "scope": "vue",
-    "prefix": "@notification",
+    "prefix": "unotification",
     "body": [
       "const h = this.\\$createElement\n",
       "this.\\$notify({",
