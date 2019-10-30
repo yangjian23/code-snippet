@@ -27,30 +27,30 @@ uel-button // 对应 <el-button type=""></el-button>
 ### element-ui
 snippets|purpose
 -|-
-uel-container|<el-container>
-uel-i|<el-i>
-uel-button|<el-button>
-uel-radio-group|<el-radio-group>
-uel-checkbox-group|<el-checkbox-group>
-uel-input|<el-input>
-uel-select|<el-select>
-uel-switch|<el-switch>
-uel-upload|<el-upload>
-uel-form|<el-form>
-uel-table|<el-table>
-uel-progress|<el-progress>
-uel-tree|<el-tree>
-uel-pagination|<el-pagination>
-uel-menu|<el-menu>
-uel-tabs|<el-tabs>
-uel-breadcrumb|<el-breadcrumb>
-uel-dropdown|<el-dropdown>
-uel-dialog|<el-dialog>
-uel-tooltip|<el-tooltip>
-uel-popover|<el-popover>
-uel-card|<el-card>
-uel-carousel|<el-carousel>
-uel-collapse|<el-collapse>
+uel-container|el-container
+uel-i|el-i
+uel-button|el-button
+uel-radio-group|el-radio-group
+uel-checkbox-group|el-checkbox-group
+uel-input|el-input
+uel-select|el-select
+uel-switch|el-switch
+uel-upload|el-upload
+uel-form|el-form
+uel-table|el-table
+uel-progress|el-progress
+uel-tree|el-tree
+uel-pagination|el-pagination
+uel-menu|el-menu
+uel-tabs|el-tabs
+uel-breadcrumb|el-breadcrumb
+uel-dropdown|el-dropdown
+uel-dialog|el-dialog
+uel-tooltip|el-tooltip
+uel-popover|el-popover
+uel-card|el-card
+uel-carousel|el-carousel
+uel-collapse|el-collapse
 umessage|function $message
 umessageBox-alert|function $alert
 umessageBox-confirm|function $confirm
