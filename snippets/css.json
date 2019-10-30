@@ -1,0 +1,224 @@
+{
+  "animation": {
+    "scope": "css",
+    "prefix": "uanimation",
+    "body": [
+      "/* animation: name duration timing-function delay iteration-count direction fill-mode; */",
+      "animation: myframe 3s  linear 1s 2 alternate;"
+    ],
+    "description": "css animation"
+  },
+
+  "keyframes": {
+    "scope": "css",
+    "prefix": "ukeyframes",
+    "body": [
+      "@keyframes myframe{",
+      "  /* from */",
+      "  0% { background: yellow; }",
+      "  /* to */",
+      "  100% { background: red; }",
+      "}"
+    ],
+    "description": "css keyframe"
+  },
+
+  "transition": {
+    "scope": "css",
+    "prefix": "utransition",
+    "body": [
+      "/* property duration timing-function delay */",
+      "transition: width 3s ease 1s;"
+    ],
+    "description": "css transition"
+  },
+
+  "border": {
+    "scope": "css",
+    "prefix": "uborder",
+    "body": [
+      "/* width style(required) color*/",
+      "border: 5px solid red;"
+    ],
+    "description": "css border"
+  },
+
+  "font": {
+    "scope": "css",
+    "prefix": "ufont",
+    "body": [
+      "/* font-style font-variant font-weight font-size/line-height font-family */",
+      "font: italic bold 16px Georgia, serif;"
+    ],
+    "description": "css font"
+  },
+
+  "background": {
+    "scope": "css",
+    "prefix": "ubackground",
+    "body": [
+      "/* color image position/size repeat origin clip attachment initial|inherit */",
+      "background: #fff url('') 10px 10px no-repeat;"
+    ],
+    "description": "css background"
+  },
+
+  "box-shadow": {
+    "scope": "css",
+    "prefix": "ubox-shadow",
+    "body": [
+      "/* inset | offset-x | offset-y | blur-radius | spread-radius | color */",
+      "box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);"
+    ],
+    "description": "css box-shadow"
+  },
+
+  "flex": {
+    "scope": "css",
+    "prefix": "uflex",
+    "body": [
+      "display: flex;",
+      "flex-flow: row nowrap;",
+      "justify-content: flex-start;",
+      "align-items: center;"
+    ],
+    "description": "css flex"
+  },
+
+  "clearfix": {
+    "scope": "css",
+    "prefix": "uclearfix",
+    "body": [
+      ".clearfix{",
+      "  *zoom: 1;",
+      "}",
+      "",
+      ".clearfix:before, .clearfix:after {",
+      "  display: table;",
+      "  line-height: 0;",
+      "  content: '';",
+      "}",
+      "",
+      ".clearfix:after {",
+      "  clear: both;",
+      "}"
+    ],
+    "description": "css clearfix"
+  },
+
+  "ellipsis": {
+    "scope": "css",
+    "prefix": "uellipsis",
+    "body": [
+      "overflow: hidden;",
+      "white-space: nowrap;",
+      "text-overflow: ellipsis;"
+    ],
+    "description": "css ellipsis"
+  },
+
+  "multi-lines ellipsis": {
+    "scope": "css",
+    "prefix": "umulti-ellipsis",
+    "body": [
+      "width: 100px;",
+      "overflow: hidden;",
+      "display: -webkit-box;",
+      "-webkit-box-orient: vertical;",
+      "-webkit-line-clamp: 3; \/*行数*\/"
+    ],
+    "description": "css multi-lines ellipsis"
+  },
+
+  "customize scrollbar": {
+    "scope": "css",
+    "prefix": "ucustomize-scrollbar",
+    "body": [
+      "div::-webkit-scrollbar {",
+      "  width: 5px;",
+      "}",
+      "",
+      "div::-webkit-scrollbar-track {",
+      "   background: #323b50;",
+      "}",
+      "",
+      "div::-webkit-scrollbar-thumb {",
+      "  background-color: #00ccff;",
+      "  min-height:28px;",
+      "  border-radius: 3px;",
+      "}"
+    ],
+    "description": "css customize scrollbar"
+  },
+
+  "triangle": {
+    "scope": "css",
+    "prefix": "utriangle",
+    "body": [
+      ".triangle {",
+      "  width: 0;",
+      "  height: 0;",
+      "  border: 20px solid transparent;",
+      "  border-left-color: #333;",
+      "}"
+    ],
+    "description": "css triangle"
+  },
+
+  "arrow-right": {
+    "scope": "css",
+    "prefix": "uarrow-right",
+    "body": [
+      ".arrow-right {",
+      "  width: 0;",
+      "  height: 0;",
+      "  border: 50px solid transparent;",
+      "  border-left-color: #333;",
+      "  position: relative;",
+      "}",
+      "",
+      ".arrow-right:after {",
+      "  content: '';",
+      "  border: 50px solid transparent;",
+      "  border-left-color: #fff;",
+      "  position: absolute;",
+      "  left: -55px;",
+      "  bottom: -50px;",
+      "}"
+    ],
+    "description": "css arrow-right"
+  },
+
+  "hover-moveup": {
+    "scope": "css",
+    "prefix": "uhover-moveup",
+    "body": [
+      ".hover-moveup {",
+      "  transform: translateY(0);",
+      "  transition-duration: 0.5s;",
+      "}",
+      "",
+      ".hover-moveup:hover {",
+      "  transform: translateY(-20px);",
+      "  transition-duration: 0.5s;",
+      "}"
+    ],
+    "description": "css hover-moveup"
+  },
+
+  "hover-scale": {
+    "scope": "css",
+    "prefix": "uhover-scale",
+    "body": [
+      ".hover-scale {",
+      "  transition-duration: 0.5s;",
+      "}",
+      "",
+      ".hover-scale:hover {",
+      "  transform: scale(1.1);",
+      "  transition-duration: 0.5s;",
+      "}"
+    ],
+    "description": "css hover-scale"
+  }
+}

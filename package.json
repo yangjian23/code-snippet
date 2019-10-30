@@ -1,48 +1,76 @@
 {
-    "name": "unicloud-code-snippet",
-    "displayName": "Code Snippets for Unicloud",
-    "description": "it's a code snippet plugin for Unicloud",
-    "publisher": "unicloud-fed",
-    "version": "1.0.5",
-    "icon": "images/logo.png",
-    "engines": {
-        "vscode": "^1.36.0"
-    },
-    "scripts": {
-        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./snippets/snippets.vue.json"
-            },
-            {
-                "language": "vue",
-                "path": "./snippets/snippets.vue.json"
-            },
-            {
-                "language": "vue-html",
-                "path": "./snippets/snippets.vue.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.js.json"
-            },
-            {
-                "language": "scss",
-                "path": "./snippets/snippets.scss.json"
-            }
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@10.0.53.138:frontend-labs/vscode-snippets.git"
-    },
-    "devDependencies": {
-        "conventional-changelog-cli": "^2.0.23"
-    }
+  "name": "unicloud-code-snippet",
+  "displayName": "Code Snippets for Unicloud",
+  "description": "it's a code snippet plugin for Unicloud",
+  "publisher": "unicloud-fed",
+  "version": "1.0.5",
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue.json"
+      },
+      
+      {
+        "language": "html",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/element-ui.json"
+      },
+
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+
+      {
+        "language": "javascript",
+        "path": "./snippets/regExp.json"
+      },
+
+      {
+        "language": "css",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/css.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@10.0.53.138:frontend-labs/vscode-snippets.git"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.23"
+  }
 }
