@@ -1,0 +1,17 @@
+div {
+  /* font-style font-variant font-weight font-size/line-height font-family */
+  font: italic bold 16px Georgia, serif;
+
+  /* color image position/size repeat origin clip attachment initial|inherit */
+  background: #fff url('') 10px 10px no-repeat;
+
+  @keyframes myframe{
+    /* from */
+    0% { background: yellow; }
+    /* to */
+    100% { background: red; }
+  }
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: myframe 3s  linear 1s 2 alternate;
+}
