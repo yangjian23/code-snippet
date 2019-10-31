@@ -1,21 +1,23 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import HTTP from '@pillarjs/http'
+import { Message } from 'element-ui'
 
-const routes = [{
-  path: '',
-  name: '',
-  component: () => import(''),
-  // redirect: '',
-  // meta: {},
-  // children: [{
-    // path: '',
-    // name: '',
-    // component: () => import('')
-  // }]
-}]
+const http = new HTTP({
+  baseURL: '/'
+  // timeout: 5000
+})
 
-Vue.use(Router)
+// http.useRequestInterceptor(request => {
+  // ...
+// })
 
-export default new Router({
-  routes
+http.useResponseInterceptor(response => {
+  if(
+    response.status == 200 ||
+    response.status == 201 ||
+    response.status == 304
+  ) {
+    return response.data
+  } else {
+    Message.error('系统错误，请联系管理员')
+  }
 })
