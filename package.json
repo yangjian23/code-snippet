@@ -46,6 +46,10 @@
       },
       {
         "language": "javascript",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/javascript.json"
       },
       {
