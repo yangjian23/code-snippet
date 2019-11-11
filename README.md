@@ -57,6 +57,8 @@ umessageBox-confirm|function $confirm
 umessageBox-prompt|funciton $prompt
 unotification|function $notify
 
+![element-ui](/images/element-ui.gif)
+
 ### vue API
 snippets|purpose
 -|-
@@ -81,6 +83,10 @@ ulifehooks|Enumeration of Vue life circle hooks
 ugenerate-store|Vuex base
 ugenerate-router|Vue Router base
 ugenerate-interceptors|simple interceptors created with Axios
+
+![vue-api1](/images/vue-api1.gif)
+
+![vue-api2](/images/vue-api2.gif)
 
 ### javascript
 snippets|purpose
@@ -115,6 +121,8 @@ uanimation|CSS animation
 uhover-moveup|target element moveup when cursor hover up
 uhover-scale|target element change scale when cursor hover up
 
+![css](/images/css.gif)
+
 ### RegExp
 snippets|purpose
 -|-
@@ -133,7 +141,7 @@ ureg-website|网址
 ureg-version|版本号
 ureg-social-credit-code|统一社会信用码
 
-
+![regexp](/images/regexp.gif)
 
 ## and More
 Code Snippets for Unicloud 还在起步阶段，如果您有好的想法和需要补充的代码片段，欢迎留下 Issues ,我们将不断完善
